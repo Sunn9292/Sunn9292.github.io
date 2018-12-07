@@ -33,8 +33,8 @@ jQuery(document).ready(function($){
     
     // colapser za About stranu
     $('.par_about_wow').collapser({
-    mode: "words",
-    truncate: 30
+        mode: "words",
+        truncate: 40
     }); 
 
 });
