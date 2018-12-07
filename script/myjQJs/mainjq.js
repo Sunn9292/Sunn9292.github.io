@@ -30,14 +30,17 @@ jQuery(document).ready(function($){
             e.stopPropagation();
             $('#legion_app_showonclick').toggle(500);
         });
+    
+    // colapser za About stranu
+    $('.par_about_wow').colapser({
+        mode: "words",
+        truncate: 30
+    }); 
+    
 
 });
 
-// colapser za About stranu
-$('.par_about_wow').colapser({
-    mode: "words",
-    truncate: 30
-}); 
+
 
 // Dinamicki nav meni
 window.onload = function(){
