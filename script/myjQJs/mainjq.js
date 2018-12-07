@@ -30,6 +30,11 @@ jQuery(document).ready(function($){
             e.stopPropagation();
             $('#legion_app_showonclick').toggle(500);
         });
+
+        //Fancybox plugin za galery
+        $(document).ready(function() {
+            $(".fancybox").fancybox();
+        });
 });
 
 // Dinamicki nav meni
