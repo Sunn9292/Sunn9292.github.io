@@ -31,13 +31,6 @@ jQuery(document).ready(function($){
             $('#legion_app_showonclick').toggle(500);
         });
     
-        //About expanding
-        $('.par_about_wow').hide();
-        $(".header_about_wow").click(function(e){
-            e.stopPropagation();
-            $('.par_about_wow').toggle(500);
-        });
-   
 });
 
 
