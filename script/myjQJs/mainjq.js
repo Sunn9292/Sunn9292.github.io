@@ -33,6 +33,12 @@ jQuery(document).ready(function($){
 
 });
 
+// colapser za About stranu
+$('.par_about_wow').colapser({
+    mode: "words",
+    truncate: 30
+}); 
+
 // Dinamicki nav meni
 window.onload = function(){
 
