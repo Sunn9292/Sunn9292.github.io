@@ -30,13 +30,7 @@ jQuery(document).ready(function($){
             e.stopPropagation();
             $('#legion_app_showonclick').toggle(500);
         });
-    
-    // colapser za About stranu
-    $('.par_about_wow').collapser({
-        mode: "words",
-        truncate: 40
-    }); 
-
+   
 });
 
 
