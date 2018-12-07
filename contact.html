@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World of Warcraft:Contact</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon/favicon.png' />
+    <link rel="stylesheet" href="css/forms.css" type="text/css" media="screen" charset="utf-8"/>
+    <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8” />
+    <meta name="keywords" content="World of Warcraft, Game, MMO, Warrior, Mage, Caster, Fight, Play" />
+    <meta name="description" content="What is WoW? This is MMO Multiplayer game, which plays over 10 bilion ppl in world. New Expansion Legion is awailable for purchase at the moment!" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.4.min.js" charset="utf-8"></script>
+
+</head>
+<body>
+<div id="page">
+
+    <button id="myBtn" title="Go to top">Top</button>
+
+    <div id="header"> 
+
+        <div class="header-slider">
+            <div class="slider-outer">
+                <div class="slider">
+                    <img class="mySlides" src="pictures/sliderSlike/indexSlider1.png"/>
+                    <img class="mySlides" src="pictures/sliderSlike/indexSlider2.png"/>
+                    <img class="mySlides" src="pictures/sliderSlike/indexSlider3.png"/>
+                </div>
+            </div>
+        </div>
+        <!--Dinamicka nav lista-->
+        <div class="main-nav-wrapper"></div>
+    </div>
+	
+	<div id="search_login">
+				<div id="search">
+					<form action="search.php" method="post">
+						<input type="text" id="searchBar" placeholder="" value="Search..." maxlength="25" autocomplete="off" onMouseDown="" onBlur="" /><input type="submit" id="searchButton" value="Go!" />
+					</form>
+				</div>
+				<div id="log_in">
+					<p><a href="login.html" class="nav_link">Log in</a></p>
+				</div>
+				
+				<div class="clear"></div>
+    </div> 
+    
+    <div id="content">
+        <div id="sidebar">
+            <div class="sidebar_info">
+                <h2>New Player's Guide</h2>
+                <p>Heroes come in all shapes and sizes. Adventure is all around you. Will you become one of Azeroth's legends? Everything you need to take that first step is right here.</p>
+            </div>
+           
+            <div class="sidebar_info">
+                <h2>If u need help ingame</h2>
+                <p>You can google MMO Champion. It's the site where you can clear most of the stuff that are not clear to you at the moment.</p>
+            </div>
+            <div class="sidebar_info">
+                <h2>Welcome to Azeroth</h2>
+                <p>​Welcome to Azeroth
+This tutorial will ensure that the beginning of your journey will be a smooth one. It provides information that will help you find your way when you get lost, as well as tips that will offer guidance and advice as you march on towards greatness. It is not an exhaustive guide, however; it neither can nor wants to unveil every secret of Azeroth to you. That glorious task is left up to you as you explore the world yourself. Think of this guide as a touchstone for your early adventures: enough to get started, but too little to spoil any of the awesome surprises that await you in Azeroth.
+And with that, let’s begin.</p>
+            </div>
+            
+        </div>
+		
+        <div id="container">
+            <div id="contactForm">
+                    <table border="0" id="contactTable">
+                            <form name="contactForm" id="contactForm">
+                                <tr>
+                                    <th colspan="2" id="contactTitle">Contact us:</th> 
+                                   
+                                </tr>
+                               
+                                <tr>
+                                    <td class="formName_class"><label>Full Name:</label></td>
+                                    <td class="formName_class"><input type="text" id="cName" name="name"/></td>
+                                </tr>
+                                <tr class="invisible">
+                                    <td colspan='2'>
+                                        <p id='resultName'>Full Name is not valid. Enter a valid Full Name!</p>
+                                    </td>
+                                </tr>
+                                
+
+                                <tr>
+                                    <td><label>Email: </label></td>
+                                    <td><input type="text" id="cEmail" name="email"/></td>
+                                </tr>
+                                <tr class="invisible">
+                                    <td colspan='2'>
+                                        <p id='resultEmail'>E-mail is not valid. Enter valid E-mail!</p>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td>Comment:</td>
+                                    <td>
+                                        <textarea id="cComment" class="commentClass" name="commentN" ></textarea>
+                                    </td>
+                                </tr>
+                                <tr class="invisible">
+                                    <td colspan='2'>
+                                        <p id='resultComment'>You have to write something in the comment!</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" align="center">
+                                        <input type="button" value="Send" id='btnSend'/>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                            </form>
+
+                    </table>
+			</div>
+		</div>
+		<div class="clear"></div>
+    </div>
+    <div id="footer">
+        <center>
+            <!--Dinamicka nav lista-->
+            <div class="main-nav-wrapper"></div>
+        </center>
+        <center id="copy">&copy;Vladimir Mijajlović, INC.Allrights Reserved</center>
+    </div>
+</div>    
+
+<script src="script/myjQJs/mainjq.js"></script>
+<script src="script/myjQJs/slider.js"></script>
+
+</body>
+</html>

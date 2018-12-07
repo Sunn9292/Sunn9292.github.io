@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World of Warcraft:Log in</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel='shortcut icon' type='image/x-icon' href='images/favicon/favicon.png' />
+    <link rel="stylesheet" href="css/forms.css" type="text/css" media="screen" charset="utf-8"/>
+    <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8” />
+    <meta name="keywords" content="World of Warcraft, Game, MMO, Warrior, Mage, Caster, Fight, Play" />
+    <meta name="description" content="What is WoW? This is MMO Multiplayer game, which plays over 10 bilion ppl in world. New Expansion Legion is awailable for purchase at the moment!" />
+    
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.4.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="lib/jquery.validate.min.js" charset="utf-8"></script>
+    
+
+</head>
+<body>
+<div id="page">
+
+    <button id="myBtn" title="Go to top">Top</button>
+
+    <div id="header"> 
+
+        <div class="header-slider">
+            <div class="slider-outer">
+                <div class="slider">
+                    <img class="mySlides" src="pictures/sliderSlike/indexSlider1.png"/>
+                    <img class="mySlides" src="pictures/sliderSlike/indexSlider2.png"/>
+                    <img class="mySlides" src="pictures/sliderSlike/indexSlider3.png"/>
+                </div>
+            </div>
+        </div>
+        <!--Dinamicka nav lista-->
+        <div class="main-nav-wrapper"></div>
+    </div>
+	
+	<div id="search_login">
+				<div id="search">
+					<form action="search.php" method="post">
+						<input type="text" id="searchBar" placeholder="" value="Search..." maxlength="25" autocomplete="off" onMouseDown="" onBlur="" /><input type="submit" id="searchButton" value="Go!" />
+					</form>
+                </div>
+
+                
+				<div id="log_in">
+                    <a href="login.html" >Log in</a>
+                    
+                </div>
+               
+                
+				<div class="clear"></div>
+    </div> 
+    
+    <div id="content">
+        <div id="sidebar">
+            <div class="sidebar_info">
+                <h2>New Player's Guide</h2>
+                <p>Heroes come in all shapes and sizes. Adventure is all around you. Will you become one of Azeroth's legends? Everything you need to take that first step is right here.</p>
+            </div>
+           
+            <div class="sidebar_info">
+                <h2>If u need help ingame</h2>
+                <p>You can google MMO Champion. It's the site where you can clear most of the stuff that are not clear to you at the moment.</p>
+            </div>
+            <div class="sidebar_info">
+                <h2>Welcome to Azeroth</h2>
+                <p>​Welcome to Azeroth
+This tutorial will ensure that the beginning of your journey will be a smooth one. It provides information that will help you find your way when you get lost, as well as tips that will offer guidance and advice as you march on towards greatness. It is not an exhaustive guide, however; it neither can nor wants to unveil every secret of Azeroth to you. That glorious task is left up to you as you explore the world yourself. Think of this guide as a touchstone for your early adventures: enough to get started, but too little to spoil any of the awesome surprises that await you in Azeroth.
+And with that, let’s begin.</p>
+            </div>
+            
+        </div>
+		
+        <div id="container">
+            <div id="createacc-form">
+                <div id="signup">
+                    <h2>Sign up</h2>  
+                        <form id="signup-form" action="">
+                            
+                                <label for="name">Name:</label>
+                                <input name="name" id="name" type="text"/>
+                            
+                            
+                                <label for="email">Email:</label>
+                                <input name="email" id="email" type="text"/>
+                            
+                            
+                                <label for="password">Password:</label>
+                                <input name="password" id="password" type="password" />
+                              
+                            
+                                <label for="passconf">Confirm Password:</label>
+                                <input name="passconf" id="passconf" type="password" />
+                                 
+                            
+                                <input id="submit" class="submit-form-button" type="submit" value="Submit" />
+                            
+                        </form>
+                </div>
+                    <!--obuhvatac-->
+            </div>
+            </div>
+
+		</div>
+		<div class="clear"></div>
+    </div>
+    <div id="footer">
+        <center>
+            <!--Dinamicka nav lista-->
+            <div class="main-nav-wrapper"></div>
+        </center>
+        <center id="copy">&copy;Vladimir Mijajlović, INC.Allrights Reserved</center>
+    </div>
+    
+    
+</div>    
+
+<script type="text/javascript" src="script/myjQJs/signuplogin.js"></script>
+<script type="text/javascript" src="script/myjQJs/mainjq.js"></script>
+<script type="text/javascript" src="script/myjQJs/slider.js"></script>
+
+
+</body>
+</html>

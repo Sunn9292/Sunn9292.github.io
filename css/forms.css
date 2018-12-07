@@ -1,0 +1,218 @@
+tbody tr th{
+    font-size: 1.5em;
+}
+
+/*CREATE ACC FORM */
+#signup{
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+#signup h2{
+    text-align: center;
+    border-bottom: 3px solid #f8b700;
+    padding: 0 0 15px 0;
+    margin-bottom: 20px;
+}
+
+#signup-form{
+    align-content: center;
+    padding: 20px 0 0 0;
+}
+
+#signup-form label {
+    display: block;;
+  }
+
+#signup-form input{
+    margin: 0 0 20px 0;
+}
+
+#signup-form label.valid {
+    width: 24px;
+    display: inline-block;
+    text-indent: -9999px;
+  }
+  
+#signup-form label.error {
+    padding-left: 5px;
+    display: inline-block;
+  }
+  
+#signup-form input {
+    display: inline-block;
+  }
+  
+#signup-form div {
+    padding: 5px;
+    float: left;
+    clear: left;
+    width: 100%;
+  }
+  
+#signup-form .submit-form-button{
+      width: 100%;
+      height: 40px;
+      background-color: #f8b700;
+      border: none;
+      display: block;
+      margin: 20px 0 20px 0;
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+  } 
+
+.submit-form-button{
+    width: 100%;
+    height: 40px;
+    background-color: #f8b700;
+    border: none;
+    display: block;
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+} 
+  
+
+/*LOGIN FORM*/
+#login{
+    width: 600px;
+    margin: 0 auto;
+    
+}
+
+#login h2{
+    text-align: center;
+    border-bottom: 3px solid #f8b700;
+    padding: 0 0 15px 0;
+    margin-bottom: 20px;
+}
+
+#login-form{
+    align-content: center;
+    padding: 20px 0 0 0;
+}
+
+#login-form label {
+    display: block;;
+  }
+
+#login-form input{
+    margin: 0 0 20px 0;
+}
+
+#login-form label.valid {
+    width: 24px;
+    display: inline-block;
+    text-indent: -9999px;
+  }
+  
+#login-form label.error {
+    padding-left: 5px;
+    display: inline-block;
+  }
+  
+#login-form input {
+    display: inline-block;
+  }
+  
+#login-form div {
+    padding: 5px;
+    float: left;
+    clear: left;
+    width: 100%;
+  }
+
+
+#donthaveacc{
+    padding: 20px 0 0 0;
+    width: 250px;
+    margin: 0 auto;
+}
+  
+#donthaveacc p a{
+    border-bottom: 2px solid #f8b700;
+}
+
+/*CONTACT STYLE*/      
+input[type='text'], input[type='email'], input[type='password'], textarea, select{
+	width:300px;
+	padding:5px 0px;
+	font-size:20px;
+    font-family: Sans-narrow;
+}
+
+input[type='button']{
+	width:100%;
+	background-color: #f8b700;
+	border:none;
+	padding:5px 0px;
+	font-size:20px;
+	color:#fff;	
+	
+	font-family: Sans-narrow;
+}
+
+input[type='text'], input[type='password'], textarea{
+    background-color: #ebdec2;
+    border: 1px solid #000000;
+    border-color: #000000;
+    -webkit-border-top-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+
+	-moz-border-radius-topright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+
+	border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+}
+
+table{
+    margin: 0 auto;
+    width: 80%;
+
+}
+
+th{
+    border-bottom: 2px solid #f8b700;
+    padding-bottom:10px;
+}
+
+td{
+	padding:15px 0px;
+}
+
+.contactName_FontStyle{
+    font-size: 1.5em;
+}
+
+#contactTitle{
+    font-size: 1.5em;
+}
+
+#commentClass{
+    width: 300px;
+}
+
+.invisible{
+    display: none;
+}
+
+
+.nevidljiv{
+    display: none;
+}
