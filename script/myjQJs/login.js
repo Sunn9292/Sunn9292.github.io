@@ -1,7 +1,6 @@
 //Validate login form
 
 $(document).ready(function(){
-    console.log('radi');
     $('#login-form').validate({
         rules: {
             email: {
