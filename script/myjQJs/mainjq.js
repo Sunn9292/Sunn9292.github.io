@@ -33,7 +33,7 @@ jQuery(document).ready(function($){
     
         //About expanding
         $('.par_about_wow').hide();
-        $("header .header_about_wow").click(function(e){
+        $(".header_about_wow").click(function(e){
             e.stopPropagation();
             $('.par_about_wow').toggle(500);
         });
