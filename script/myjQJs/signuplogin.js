@@ -1,7 +1,6 @@
 //Validate signup form
 
   $(document).ready(function(){
-    console.log('radi');
     $('#signup-form').validate({
         rules: {
             name: {
