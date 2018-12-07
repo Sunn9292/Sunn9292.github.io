@@ -132,11 +132,11 @@ And with that, let’s begin.</p>
 		      }
 
 		      $("body").on("click", ".read-more-link", function(){
-			  $(this).parent(".par_about_wow").html(readMoreHtml).append("<a href='' class='read-less-link'>Show Less</a>");
+			  $(this).parent(".par_about_wow").html(readMoreHtml).append("<a href='' class='read-less-link'>Show Less</a>")
 		      });
 
 		      $("body").on("click", ".read-less-link", function(){
-			$(this).parent(".par_about_wow").html(readMoreHtml.substr(0, 100)).append("<a href='' class='read-more-link'>Show More</a>");
+			$(this).parent(".par_about_wow").html(readMoreHtml.substr(0, 100)).append("<a href='' class='read-more-link'>Show More</a>")
 		    });
 		  });
 	</script>
