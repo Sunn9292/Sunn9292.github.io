@@ -120,27 +120,5 @@ And with that, let’s begin.</p>
 <script src="script/myjQJs/mainjq.js"></script>
 <script src="script/myjQJs/slider.js"></script>
 	
-	<script type="text/javascript">
-		$(document).ready(function(){
-		      var readMoreHtml = $(".par_about_wow").html();
-		      var lessText = readMoreHtml.substr(0, 100);
-
-		      if(readMoreHtml.length>100){
-			  $(".par_about_wow").html(lessText).append("<a href='' class='read-more-link'>Show More</a>");
-		      }else{
-			  $(".par_about_wow").html(readMoreHtml);
-		      }
-
-		      $("body").on("click", ".read-more-link", function(){
-			  $(this).parent(".par_about_wow").html(readMoreHtml).append("<a href='' class='read-less-link'>Show Less</a>")
-		      });
-
-		      $("body").on("click", ".read-less-link", function(){
-			$(this).parent(".par_about_wow").html(readMoreHtml.substr(0, 100)).append("<a href='' class='read-more-link'>Show More</a>")
-		    });
-		  });
-	</script>
-
-
 </body>
 </html>
