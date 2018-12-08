@@ -68,7 +68,7 @@ window.onload = function(){
 
     //contact forma -dinamicko ispisivanje gradova u dropdown listu
     var getGradList = document.querySelector("#grad");
-    getGradList.innerHTML = `<option value='0'>Izaberite...</option>`;
+    getGradList.innerHTML = `<option value='0'>Chose...</option>`;
 
     gradovi.forEach(function (grad) {
         getGradList.innerHTML += "<option value='" + grad + "'>" + grad + "</option>";
@@ -78,10 +78,10 @@ window.onload = function(){
 
 //niz za gradove
 var gradovi = [
-    "Beograd",
-    "Novi Sad",
-    "Nis",
-    "Kragujevac",
+    "Belgrade",
+    "Tokyo",
+    "Berlin",
+    "Dubai",
 ];
 
 //funkcija za validaciju contact forme - on click
