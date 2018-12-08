@@ -30,8 +30,17 @@ jQuery(document).ready(function($){
             e.stopPropagation();
             $('#legion_app_showonclick').toggle(500);
         });
-    
+
+
+        //About expanding
+        $(".header_about_wow").click(function(e){
+            e.stopPropagation();
+            $('.par_about_wow').toggle(500);
+        });
+
+        
 });
+
 
 
 // Dinamicki nav meni
@@ -56,7 +65,24 @@ window.onload = function(){
     if(getButton){
         getButton.addEventListener('click', provera);
     }
+
+    //contact forma -dinamicko ispisivanje gradova u dropdown listu
+    var getGradList = document.querySelector("#grad");
+    getGradList.innerHTML = `<option value='0'>Izaberite...</option>`;
+
+    gradovi.forEach(function (grad) {
+        getGradList.innerHTML += "<option value='" + grad + "'>" + grad + "</option>";
+    });
+    
 }
+
+//niz za gradove
+var gradovi = [
+    "Beograd",
+    "Novi Sad",
+    "Nis",
+    "Kragujevac",
+];
 
 //funkcija za validaciju contact forme - on click
 function provera(){
@@ -90,9 +116,20 @@ function provera(){
             getGreskaEmail.classList.add('invisible');
         }
 
+    
+    //Gradovi provera
+    var ddlGradElement = document.getElementById('grad');
+    var trTagRoditeljGrad = ddlGradElement.parentElement.parentElement;
+    var trTagGreskaGrad = trTagRoditeljGrad.nextElementSibling;
+
+    if (ddlGradElement.value === "0") {
+        trTagGreskaGrad.classList.remove('invisible');
+        document.getElementById('resultGrad').style.color = "red";
+    } else {
+        trTagGreskaGrad.classList.add('invisible');
+    }
 
     //Comment provera
-
     var validateComment = /^([A-z][0-9])+$/;
     var getComment = document.querySelector('#cComment');
 
