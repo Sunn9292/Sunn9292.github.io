@@ -3,6 +3,7 @@
 <head>
     <title>World of Warcraft:Home</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon/favicon.png' />
     <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8” />
     <meta name="keywords" content="World of Warcraft, Game, MMO, Warrior, Mage, Caster, Fight, Play" />
@@ -10,7 +11,13 @@
 </head>
 <body>
 <div id="page">
-
+        <div class="topnav" id="myTopnav">
+            <a href="javascript:void(0);" class="icon">
+                <i class="fa fa-bars"></i>
+            </a>
+            <nav class="navbar hide" id="jsToggleNavBar"></nav>
+        </div>
+   
     <button id="myBtn" title="Go to top">Top</button>
 
     <div id="header">
@@ -25,20 +32,26 @@
             </div>
         </div>
         <!--Dinamicka nav lista-->
-        <div class="main-nav-wrapper"></div>
-    </div>
-	<div id="search_login">
-				<div id="search">
-					<form action="search.php" method="post">
-						<input type="text" id="searchBar" placeholder="" value="Search..." maxlength="25" autocomplete="off" onMouseDown="" onBlur="" /><input type="submit" id="searchButton" value="Go!" />
-					</form>
-				</div>
-				<div id="log_in">
-					<p><a href="login.html" class="nav_link">Log in</a></p>
-				</div>
-				
-				<div class="clear"></div>
+        <nav class="navbar" id="hideOnMobile"></nav>
     </div> 
+    <div id="search_login">
+        <div id="search">
+            <form action="search.php" method="post">
+                <input type="text" id="searchBar" placeholder="" value="Search..." maxlength="25" autocomplete="off" onMouseDown="" onBlur="" /><input type="submit" id="searchButton" value="Go!" />
+            </form>
+        </div>
+        <div id="log_in">
+            <p><a href="login.html" class="nav_link">Log in</a></p>
+        </div>
+        
+        <div class="clear"></div>
+    </div> 
+    <!--div za dokumentaciju za rezoluciju ispod 1000px-->
+	<div id="less_than_1000px">
+        <p>
+            <a href="files/DokumentacijaWord.pdf">PDF Documentation</a>
+        </p>
+    </div>
     
     <div id="content">
         <div id="sidebar">
@@ -90,7 +103,7 @@ And with that, let’s begin.</p>
                             <img src="pictures/news_bounty.png" alt="Pilgrim’s Bounty Has Begun!" width="320px" height="200px" />   
                         </div>
                         <div class="news_under_img">
-                                <p class="news_date">November 21st, 2016</p>
+                                <p class="news_date">November 21st, 2019</p>
                                 <p class="news_par">Pilgrim’s Bounty Has Begun</p>
                         </div>
                     </div>
@@ -100,7 +113,7 @@ And with that, let’s begin.</p>
                             <img src="pictures/cata_weekly_timewalking.png" alt="Pilgrim’s Bounty Has Begun!" width="320px" height="200px" />   
                         </div>
                         <div class="news_under_img">
-                                <p class="news_date">November 30th, 2016</p>
+                                <p class="news_date">November 30th, 2019</p>
                                 <p class="news_par">Weekly Bonus Event: Timewalking</p>
                         </div>
                     </div>
@@ -109,7 +122,7 @@ And with that, let’s begin.</p>
                             <img src="pictures/legion_pvp.png" alt="Pilgrim’s Bounty Has Begun!" width="320px" height="200px" />   
                         </div>
                         <div class="news_under_img">
-                                <p class="news_date">November 29th, 2016</p>
+                                <p class="news_date">November 29th, 2019</p>
                                 <p class="news_par">Legion PvP Season Rollover on December 14</p>
                         </div>
                     </div>
@@ -118,7 +131,7 @@ And with that, let’s begin.</p>
                             <img id="test" src="pictures/mischief.png" alt="Pilgrim’s Bounty Has Begun!" width="320px" height="200px" />   
                         </div>
                         <div class="news_under_img">
-                                <p class="news_date">December 2nd, 2016</p>
+                                <p class="news_date">December 2nd, 2019</p>
                                 <p class="news_par">Adopt Mischief Today and Support Make-A-Wish</p>
                         </div>
                     </div>
@@ -156,7 +169,7 @@ And with that, let’s begin.</p>
     <div id="footer">
         <div align="center">
             <!--Dinamicka nav lista-->
-            <div class="main-nav-wrapper"></div>
+            <nav class="navbar"></nav>
         </div>
         <div id="copy" align="center">
             &copy;Vladimir Mijajlović, INC.Allrights Reserved

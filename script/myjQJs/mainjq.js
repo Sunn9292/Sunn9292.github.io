@@ -35,7 +35,7 @@ jQuery(document).ready(function($){
         //About expanding
         $(".header_about_wow").click(function(e){
             e.stopPropagation();
-            $('.par_about_wow').toggle(500);
+            $('.par_about_wow').toggle(50);
         });
 
         
@@ -46,19 +46,23 @@ jQuery(document).ready(function($){
 // Dinamicki nav meni
 window.onload = function(){
 
+    $(".topnav").click(function(){
+        $("nav.hide").toggle(500);
+    });
     //meni dinamicki
-    var navigacija = document.getElementsByClassName("main-nav-wrapper");
+    var navigacija = document.getElementsByClassName("navbar");
     var meni = ["Home", "Galery", "About", "Contact", "Author"];
     var hMeni = ["index.html", "galery.html", "about.html", "contact.html", "author.html"];
 
-    var ispis = "<ul id='main-nav'>";
+    var ispis = "<ul class='main-nav' id='js-menu'>";
     for(var i=0;i<meni.length;i++){
-        ispis += "<li><a href='" + hMeni[i] + "'>" + meni[i] + "</a></li>"
+        ispis += "<li><a href='" + hMeni[i] + "' class='nav-links'>" + meni[i] + "</a></li>"
     }
     ispis += "</ul>";
 
     navigacija[0].innerHTML = ispis;
     navigacija[1].innerHTML = ispis;
+    navigacija[2].innerHTML = ispis;
 
     //contact forma -button
     var getButton = document.getElementById('btnSend');

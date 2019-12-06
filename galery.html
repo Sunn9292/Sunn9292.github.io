@@ -3,6 +3,7 @@
 <head>
     <title>World of Warcraft:Galery</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon/favicon.png' />
     <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8” />
     <meta name="keywords" content="World of Warcraft, Game, MMO, Warrior, Mage, Caster, Fight, Play" />
@@ -13,7 +14,12 @@
 </head>
 <body>
 <div id="page">
-
+        <div class="topnav" id="myTopnav">
+                <a href="javascript:void(0);" class="icon">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <nav class="navbar hide" id="jsToggleNavBar"></nav>
+            </div>
     <button id="myBtn" title="Go to top">Top</button>
 
     <div id="header">
@@ -27,7 +33,7 @@
             </div>
         </div>
         <!--Dinamicka nav lista-->
-        <div class="main-nav-wrapper"></div>
+        <nav class="navbar" id="hideOnMobile"></nav>
     </div>
 	<div id="search_login">
 				<div id="search">
@@ -132,7 +138,7 @@ And with that, let’s begin.</p>
     <div id="footer">
         <div align="center">
             <!--Dinamicka nav lista-->
-            <div class="main-nav-wrapper"></div>
+            <nav class="navbar"></nav>
         </div>
         <div id="copy" align="center">
             &copy;Vladimir Mijajlović, INC.Allrights Reserved
